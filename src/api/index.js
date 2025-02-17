@@ -3,12 +3,12 @@
         method:"GET", 
     });
 
-    return response.json();
+    return await response.json();
 };
 
 export const getRandomUser = async () => {
-    const response = await fetch('https://randomuser.me/' , {
+    const response = await fetch('https://randomuser.me/', {
         method: "GET",
     });
-    return response.json();
+    return await response.json();
 }
